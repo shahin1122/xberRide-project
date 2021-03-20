@@ -1,0 +1,14 @@
+[
+
+	    { "key":"1", "rent":"55$", "name":"Bike", "img":"https://i.ibb.co/5cw90Gm/Frame.png", "location" : "mirpur 1"},
+
+    	{ "key":"2", "rent":"70$" , "name":"Car", "img":"https://i.ibb.co/Ctnzy1c/Frame-2.png" , "location" : "uttara"},
+    
+    	{ "key":"3", "rent":"25$" , "name":"Bus", "img":"https://i.ibb.co/M2mN9dr/Frame-1.png", "location" : "kalabagan"},
+    
+    	{ "key":"4", "rent":"16$" , "name":"Train", "img":"https://i.ibb.co/KwPvKD4/Frame3.png", "location" : "dhanmondi"}
+
+	    
+
+]
+    

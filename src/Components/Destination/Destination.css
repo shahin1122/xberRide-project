@@ -1,0 +1,12 @@
+.carCard{
+    width: 10%;
+    height: 100px;
+    background-color: rgb(219, 179, 0);
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.carCard img{
+    width: 50%;
+    float: right;
+}
