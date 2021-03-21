@@ -29,15 +29,20 @@ const Home = () => {
         <div className="homeArea">
             {
                 <div>
+                     <h1 className="intro">Xber Ride</h1>
 
                     {cars.map(car=> 
-                    
-                        <Card onClick={()=>handleClick(car.key)} className="cardArea" style={{ width: '12rem', hight:'8rem' }}>
-                        <Card.Img variant="top" style={{width:'80%',  margin:'0 , auto'}} src={car.img} />
-                        <Card.Body>
-                        <Card.Title>{car.type}</Card.Title>
-                        </Card.Body>
-                        </Card>
+
+                       
+                       <div className="center">
+                           
+                            <Card onClick={()=>handleClick(car.key)} className="cardArea" style={{ width: '12rem', hight:'8rem' }}>
+                            <Card.Img variant="top" style={{width:'80%',  margin:'0 , auto'}} src={car.img} />
+                            <Card.Body>
+                            <Card.Title>{car.type}</Card.Title>
+                            </Card.Body>
+                            </Card>
+                       </div>
 
                     
 

@@ -164,7 +164,7 @@ const Login = () => {
 
     return (
         <div className="loginForm" >
-            <h5>Login</h5>
+            <h3>Login first</h3>
             
             <form onSubmit={handleSubmit}>
                 
@@ -174,11 +174,11 @@ const Login = () => {
                 <input type="submit" value={newUser ? 'Sign up' : 'Sign In' }/>
             </form>
             <label htmlFor="">No account? <span style={{color:'green'}}>(Create)</span> </label>
-            <input type="checkbox" onChange={()=>setNewUser(!newUser)} name="newUser" id=""/>
+            <input type="checkbox" className="cheakBox" onChange={()=>setNewUser(!newUser)} name="newUser" id=""/>
 
             <p style={{color:'red'}}>{user.error}</p>
 
-            <button onClick={handleGoogleSignIn}>Sign in Using Google</button>
+            <button className="googleBtn" onClick={handleGoogleSignIn}>Sign in Using Google</button>
 
             
 

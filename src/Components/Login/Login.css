@@ -1,13 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Monda:wght@700&display=swap');
+
+
 .loginForm{
     text-align: center;
-    border: 5px solid green;
+    background-color: rgba(255, 99, 71, 0.39);
     padding: 20px;
     border-radius: 20px;
+    font-family: 'Chakra Petch', sans-serif;
+    color: rgb(36, 50, 51);
+    font-weight: 800;
 }
+
+
 
 .loginForm input{
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+    transition: 0.4s;
+    
 }
+
+.loginForm input:hover{
+    transform: scale(1.1);
+    border-radius: 0px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.281);
+    
+
+}
+
+.loginForm input:active{
+    border: 5px solid tomato;
+}
+
+.googleBtn{
+    background-color: rgb(170, 50, 29);
+    color: whitesmoke;
+    padding: 5px 15px;
+    transition: 0.4s;
+}
+
+.googleBtn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(170, 50, 29);
+    
+}
+
 

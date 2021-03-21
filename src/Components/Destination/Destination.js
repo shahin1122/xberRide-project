@@ -34,6 +34,9 @@ const Destination = () => {
 
     const [show , setShow] = useState(false)
 
+    const [show1 , setShow1]= useState(true)
+    const [hide , setHide] = useState(false)
+
 
 
 
@@ -52,6 +55,20 @@ const Destination = () => {
 
     }
 
+    const [data , setData] = useState(null);
+    const [data1 , setData1] = useState(null);
+
+    
+ const getData=(e)=>{
+     setData(e.target.value)
+     console.warn(e.target.value)
+ }
+
+ const getData1=(e)=>{
+    setData1(e.target.value)
+    console.warn(e.target.value)
+}
+
 
     
 
@@ -67,65 +84,81 @@ const Destination = () => {
 
 
 
-            <div className='searchArea'>
-                <div>
-                    <h4>Pick From</h4>
-                    <input name ="from" type="text" />
-                    <h4>Pick to</h4>
-                    <input name="to" type="text" />
-                    <br />
+                <div className='searchArea'>
+                        <div className="pickFromCard">
+                            <h4>Pick From</h4> 
+
+                             <input name ="from" type="text" onChange={getData} /> 
+                            
+                            
+
+                            <h4>Pick to</h4>
+
+                            <input name="to" type="text" onChange={getData1} />
+
+                            <br />
+
+                            <div> <h3>Form: {data}</h3> </div>
+                            <div> <h3>To: {data1}</h3> </div>
+                            
+                       
+                        
+                        <button className="eventBtn" onClick={()=>setShow(true)} >Search</button>
+
+                        </div>
+
                     
-                </div>
-                
-                <button onClick={()=>setShow(true)} >Search</button>
+
+
+
+
+
+
+
+                {
+                    show ? 
+                    
+                    <div className='resultArea'>
+
+
+                    <div className="carCard">
+                        <span>{product.name}</span>
+                        <img src={product.img} alt="" />
+                        <span>{product.rent}</span>
+
+                    </div>
+
+                    <div className="carCard">
+                        <span>{product.name}</span>
+                        <img src={product.img} alt="" />
+                        <span>{product.rent}</span>
+
+                    </div>
+
+                    <div className="carCard">
+                        <span>{product.name}</span>
+                        <img src={product.img} alt="" />
+                        <span>{product.rent}</span>
+
+                    </div>
+
+
+
+                </div> : null
+
+
+
+
+
+                }
 
             </div>
 
 
-
-
-
-
-
-           {
-               show ? 
-               
-               <div className='resultArea'>
-
-
-               <div className="carCard">
-                   <p>{product.name}</p>
-                   <img src={product.img} alt="" />
-                   <span>{product.rent}</span>
-
-               </div>
-
-               <div className="carCard">
-                   <p>{product.name}</p>
-                   <img src={product.img} alt="" />
-                   <span>{product.rent}</span>
-
-               </div>
-
-               <div className="carCard">
-                   <p>{product.name}</p>
-                   <img src={product.img} alt="" />
-                   <span>{product.rent}</span>
-
-               </div>
-
-
-
-           </div> : null
-
-
-
-           }
-
-
+        <div className="mapArea">
             <LoadScript
                 googleMapsApiKey="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
-            >
+             >
                 <GoogleMap
                     mapContainerStyle={containerStyle}
                     center={center}
@@ -135,8 +168,10 @@ const Destination = () => {
                     <></>
                 </GoogleMap>
             </LoadScript>
-
         </div>
+
+
+    </div>
 
 
     );

@@ -1,12 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&family=Monda:wght@700&display=swap');
+
+.searchArea{
+    width: 50%;
+    float: left;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.mapArea{
+    width: 50%;
+    float: left;
+    text-align: center;
+    
+}
+
+.pickFromCard{
+    text-align: center;
+    padding: 20px;
+    background-color: bisque;
+    border: 3px solid green;
+}
+
+.eventBtn{
+    background-color: rgb(170, 50, 29);
+    color: whitesmoke;
+    padding: 5px 15px;
+    transition: 0.4s;
+    margin-top: 10px;
+}
+
+.eventBtn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(170, 50, 29);
+}
+
+.resultArea{
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 900px) {
+    .searchArea{
+        width: 100%;
+        display: block;
+        font-family: 'Chakra Petch', sans-serif;
+    }
+    
+    .mapArea{
+        width: 100%;
+        display: block;
+        float: left;
+        margin-left: 10%;
+    }
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .carCard{
-    width: 10%;
+    width: 300px;
     height: 100px;
-    background-color: rgb(219, 179, 0);
+    background-color: rgb(218, 218, 218);
     margin: 10px;
     border-radius: 5px;
+    
 }
 
 .carCard img{
-    width: 50%;
-    float: right;
+    width: 100px;
+    float: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    
 }
